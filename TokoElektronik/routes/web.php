@@ -14,5 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('landing_page/landingpage');
+    // return view('landing_page/p');
+    return view('main/main');
+});
+Route::get('/kategori', function () {
+    return view('landing/kategori');
+});
+Route::get('/aboutus', function () {
+    return view('landing/about_us');
+});
+Route::get('/contact', function () {
+    return view('landing/contact');
 });
